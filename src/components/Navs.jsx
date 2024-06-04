@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 const LINKS = [
   {
     text: 'Home',
-    to: '/',
+    to: '/Home',
   },
   {
     text: 'Starred',
