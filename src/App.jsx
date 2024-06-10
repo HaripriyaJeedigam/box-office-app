@@ -27,6 +27,7 @@ function App() {
       </Route>
       <Route path="contact-us" element={<Contact />} /> */}
           <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/starred" element={<Starred />} />
           </Route>
