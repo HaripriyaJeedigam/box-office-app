@@ -7,7 +7,6 @@ import Details from '../components/shows/Details';
 import Seasons from '../components/shows/Seasons';
 import Cast from '../components/shows/cast';
 
-
 function Show() {
   const { showId } = useParams();
   // const {showData, showError} = useShowById(showId);
@@ -16,7 +15,7 @@ function Show() {
     queryFn: () => getShowById(showId),
     refetchOnWindowFocus: false,
   });
- 
+
   if (showError) {
     return <div>We have an error: {showError.message}</div>;
   }
@@ -24,7 +23,7 @@ function Show() {
   if (showData) {
     return (
       <div>
-        <Link to ="/">Go back to home</Link>
+        <Link to="/">Go back to home</Link>
         <ShowMainData
           image={showData.image}
           name={showData.name}
